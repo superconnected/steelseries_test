@@ -26,11 +26,16 @@
 		}
 		#plate1-inner {
 			position: absolute;
-			right: 2em;
+			right: -50%;
 			top: 70%;
+			transition: right 0.5s ease-in-out;
+		}
+		#plate1:hover #plate1-inner {
+			left: auto;
+			right: 2em;
 		}
 		.slider {
-			width: 880px;
+			width: 825px;
 			overflow: hidden;
 			display: inline-block;
 			margin-left: -358px;
@@ -54,6 +59,10 @@
 		#plate2-inner {
 			position: absolute;
 			top: 20%;
+			left: -50%;
+			transition: left 0.5s ease-in-out;
+		}
+		#plate2:hover #plate2-inner {
 			left: 2em;
 		}
 		.button {
