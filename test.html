@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SteelSeries test</title>
+	<style>
+		#hero-plates {
+			position: relative;
+			width: 960px;
+			height: 500px;
+			margin: 10px;
+			padding: 0;
+			overflow: hidden;
+		}
+		.plate {
+			width: 960px;
+			height: 500px;
+		}
+		#plate1 {
+			position: absolute;
+			background: green;
+		}
+		.slider {
+			width: 500px;
+			overflow: hidden;
+			display: inline-block;
+			margin-left: -76px;
+			transform: skewX(-20deg);
+			transition: width 0.6s ease-in-out;
+			pointer-events: none;
+		}
+		.slider:hover {
+			width: 760px;
+		}
+		#plate1:hover + .slider {
+			width: 300px;
+		}
+		#plate2 {
+			transform: skewX(20deg);
+			margin-left: 76px;
+			background: red;
+			pointer-events: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="hero-plates">
+		<div id="plate1" class="plate">
+			plate 1 content
+		</div>
+		<div class="slider">
+			<div id="plate2" class="plate">
+				plate 2 content
+			</div>
+		</div>
+	</div>
+</body>
+</html>
